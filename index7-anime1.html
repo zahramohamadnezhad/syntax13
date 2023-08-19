@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+        .circle{
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            margin: 50px;
+            background: blue;
+            animation-name: para1;
+            animation-delay: 1s;
+            animation-duration: 1.4s;
+            animation-timing-function: linear;
+            animation-iteration-count: 3;
+            /* animation-direction: alternate; */
+            animation-fill-mode: forwards;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        }
+        .circle:hover{
+            animation-play-state: paused;
+        }
+        @keyframes para1{
+            from{
+                transform: translateX(0)scale(1);
+                background-color: red;
+            }
+            to{
+                transform: translateX(1000px)scale(2);
+                background-color: green;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+</body>
+</html>
